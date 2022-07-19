@@ -10,9 +10,9 @@ The assessment should not take more than 1-2 hours to finish.
 **Please clone this repository and commit the completed assessment into your own branch! On completion, PR the changes towards the master branch!**
 
 ## Problem description
-Your client is working in the medical sector, a new virus breakout has just occurred VOCID-22 and patients are pouring in to hospitals seeking medical aid, with a wide range of symptoms.
+Your client is working in the medical sector, a new virus breakout has just occurred VOCID-22 *(god forbid lol)* and patients are pouring in to hospitals seeking medical aid, with a wide range of symptoms.
 The public and private hospitals have requested your client to quickly create a public API which can be used by all sectors to log and track the pandemic, by allowing nurses and doctors to log patient details into the system.   
-You are tasked with creating a simple yet scalable public API, and deploy it out to a public cloud. The API should allow logging data, as well as allow fetching data by hospital name and/or all records in the database.
+You are tasked with creating a simple yet scalable public API, and deploy it out to a public cloud. The API should allow logging data, as well as allow fetching data by hospital name, symptom and/or fetch all records in the database.
 
 The data that needs to be captured is the following:
 - Patient Data:
@@ -20,8 +20,15 @@ The data that needs to be captured is the following:
   - name and surname
   - age
   - symptoms
-  - 
+  - name of the hospital that the patient is admitted at
+  
   
 
-## Check list
+## Checklist  
 
+- Develop an API according to the requirements above.
+- Package and deploy the artifact out to a public cloud (AWS/GCP or Azure)
+- Expose the compute resource / artifact with a public endpoint 
+- Write a small markdown document called `solution.md`, where you:
+  - Briefly motivate your selection of technologies, and how that solves the requirement of being (quick, public, scalable and easily adaptable)
+  - Detail the public API endpoint.
