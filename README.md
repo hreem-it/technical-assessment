@@ -27,6 +27,8 @@ The data that needs to be captured is the following:
 ## Checklist  
 
 - Develop an API according to the requirements above.
+  - Make sure the source code is well documented
+  - Make sure to write functional unit tests which cover the problem area.
 - Package and deploy the artifact out to a public cloud (AWS/GCP or Azure)
 - Expose the compute resource / artifact with a publicly accessible endpoint 
 - Write a small markdown document called `solution.md`, where you:
