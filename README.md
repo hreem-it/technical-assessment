@@ -28,7 +28,7 @@ The data that needs to be captured is the following:
 
 - Develop an API according to the requirements above.
 - Package and deploy the artifact out to a public cloud (AWS/GCP or Azure)
-- Expose the compute resource / artifact with a public endpoint 
+- Expose the compute resource / artifact with a publicly accessible endpoint 
 - Write a small markdown document called `solution.md`, where you:
   - Briefly motivate your selection of technologies, and how that solves the requirement of being (quick, public, scalable and easily adaptable)
   - Detail the public API endpoint.
