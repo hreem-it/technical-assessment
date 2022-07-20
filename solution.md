@@ -32,19 +32,20 @@ Tomcat is a widely used application server for Java projects. It is easy to mana
 
 I didn't used AWS before, but it is famous in it sector, so I chose it. I launched an EC2 instance with Ubuntu. It is known as a stable Linux distro. I use Ubuntu for ~10 years, so I am familiar with its environment.
 
-For documentation, I used Javadoc. In my IDE (Netbeans) it is easy to generate Javadoc as a website, if developer writes its notes rely on rules. I wrote some parts of Javadoc and I released it at [this link](http://54.159.30.33/hreem-javadoc).
+For documentation, I used Javadoc. In my IDE (Netbeans) it is easy to generate Javadoc as a website, if developer writes its notes rely on rules. I wrote some parts of Javadoc and I released it at [this link](http://54.235.54.206/hreem-javadoc).
 
 ## REST API
-The REST API runs at [this link](http://54.159.30.33:8080/hreem).
+The REST API runs at [this link](http://54.235.54.206:8080/hreem).
+**Note: In case of any problem such as URL changes, please contact me via [this link](mailto:a.rahmanakkus@hotmail.com)**
 
 ### Endpoints
 
 |       ROLE      |TYPE/LINK                          |PARAMS                         |
 |----------------|-------------------------------|-----------------------------|
-|Gets All Vocid Data|`[GET]` [`/vocid`](http://54.159.30.33:8080/hreem/vocid)            |            |
-Gets All Vocid Data Which Has A Selected Symptom (i.e. cold)         |`[GET]` [`/vocid/symptom/{symptom}`](http://54.159.30.33:8080/hreem/vocid/symptom/cold)            |         |
-|Gets All Vocid Data Which Has A Selected Hospital (i.e. konya)         |`[GET]` [`/vocid/hospital/{hospital}`](http://54.159.30.33:8080/hreem/vocid/hospital/konya) |
-|Add New Vocid Data|`[POST]` [`/vocid`](http://54.159.30.33:8080/hreem/vocid)| ```json {"ssn": 100,"name": "Abdurrahman","surname": "AKKUŞ","age": 31,"symptoms": "cold","hospital": "istanbul"}``` 
-|Update A Vocid Datum|`[PUT]` [`/vocid/{id}`](http://54.159.30.33:8080/hreem/vocid/1)|```json {"id": 1, "ssn": 100,"name": "Abdurrahman","surname": "AKKUŞ","age": 31,"symptoms": "cold","hospital": "istanbul"}``` 
-|Delete A Vocid Datum|`[DELETE]` [`/vocid/{id}`](http://54.159.30.33:8080/hreem/vocid/1)|
+|Gets All Vocid Data|`[GET]` [`/vocid`](http://54.235.54.206:8080/hreem/vocid)            |            |
+Gets All Vocid Data Which Has A Selected Symptom (i.e. cold)         |`[GET]` [`/vocid/symptom/{symptom}`](http://54.235.54.206:8080/hreem/vocid/symptom/cold)            |         |
+|Gets All Vocid Data Which Has A Selected Hospital (i.e. konya)         |`[GET]` [`/vocid/hospital/{hospital}`](http://54.235.54.206:8080/hreem/vocid/hospital/konya) |
+|Add New Vocid Data|`[POST]` [`/vocid`](http://54.235.54.206:8080/hreem/vocid)| ```json {"ssn": 100,"name": "Abdurrahman","surname": "AKKUŞ","age": 31,"symptoms": "cold","hospital": "istanbul"}``` 
+|Update A Vocid Datum|`[PUT]` [`/vocid/{id}`](http://54.235.54.206:8080/hreem/vocid/1)|```json {"id": 1, "ssn": 100,"name": "Abdurrahman","surname": "AKKUŞ","age": 31,"symptoms": "cold","hospital": "istanbul"}``` 
+|Delete A Vocid Datum|`[DELETE]` [`/vocid/{id}`](http://54.235.54.206:8080/hreem/vocid/1)|
 
