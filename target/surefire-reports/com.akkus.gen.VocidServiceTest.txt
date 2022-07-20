@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.akkus.gen.VocidServiceTest
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.03 s - in com.akkus.gen.VocidServiceTest

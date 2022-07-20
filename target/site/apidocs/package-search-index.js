@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.akkus"},{"l":"com.akkus.gen"},{"l":"com.akkus.gen.util"}]
