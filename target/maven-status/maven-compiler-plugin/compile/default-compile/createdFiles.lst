@@ -1,0 +1,9 @@
+com/akkus/gen/ISuperApi.class
+com/akkus/gen/ISuperService.class
+com/akkus/RestDemoApplication.class
+com/akkus/gen/VocidService.class
+com/akkus/gen/ISuperEntity.class
+com/akkus/ServletInitializer.class
+com/akkus/gen/VocidEntity.class
+com/akkus/gen/util/ResponseEntityUtil.class
+com/akkus/gen/VocidApi.class
