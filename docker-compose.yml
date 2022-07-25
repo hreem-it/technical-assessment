@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  vocid22-tracker-app:
+    build: .
+    image: vocid22-tracker-img
+    ports:
+      - "8080:8080"
+    environment:
+      - spring.profiles.active=docker
+    depends_on:
+      - postgres-db
+    restart: on-failure
+
+  postgres-db:
+    image: postgres:14-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=pass123
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=vocid22-tracking-db

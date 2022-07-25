@@ -1,0 +1,331 @@
+{
+	"info": {
+		"_postman_id": "32bab29f-9289-4136-b8f4-0f53c9d48b98",
+		"name": "Vocid22-tracker-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1301956"
+	},
+	"item": [
+		{
+			"name": "actuator",
+			"item": [
+				{
+					"name": "base",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/actuator",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"actuator"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/actuator/health",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/actuator/info",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"actuator",
+								"info"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getAllPatients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patient/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patient",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPatientById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patient/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patient",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"socialSecurityNumber\": \"11223344561\",\r\n    \"name\": \"REmily\",\r\n    \"lastname\": \"Noe\",\r\n    \"gender\": \"Male\",\r\n    \"age\": 33,\r\n    \"symptoms\": [\r\n        \"Fever or chills\",\r\n        \"Fatigue\",\r\n        \"Sore throat\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patient/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patient",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateAnyPatient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"socialSecurityNumber\": \"11223344561\",\r\n    \"name\": \"Ramazan\",\r\n    \"lastname\": \"Sakin\",\r\n    \"gender\": \"Male\",\r\n    \"age\": 28,\r\n    \"symptoms\": [\r\n        \"Headache\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patient/update/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patient",
+						"update",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transportAnyPatient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"socialSecurityNumber\": \"11223344561\",\r\n    \"name\": \"Ramazan\",\r\n    \"lastname\": \"Sakin\",\r\n    \"gender\": \"Male\",\r\n    \"age\": 28,\r\n    \"symptoms\": [\r\n        \"Headache\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patient/1/transport/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patient",
+						"1",
+						"transport",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transportAnyPatient_Failure",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"socialSecurityNumber\": \"11223344561\",\r\n    \"name\": \"Ramazan\",\r\n    \"lastname\": \"Sakin\",\r\n    \"gender\": \"Male\",\r\n    \"age\": 28,\r\n    \"symptoms\": [\r\n        \"Headache\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patient/1/transport/18",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patient",
+						"1",
+						"transport",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAnyPatient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"socialSecurityNumber\": \"11223344561\",\r\n    \"name\": \"Ramazan\",\r\n    \"lastname\": \"Sakin\",\r\n    \"gender\": \"Male\",\r\n    \"age\": 28,\r\n    \"symptoms\": [\r\n        \"Headache\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patient/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patient",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPatientsByHospital",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"socialSecurityNumber\": \"11223344561\",\r\n    \"name\": \"Ramazan\",\r\n    \"lastname\": \"Sakin\",\r\n    \"gender\": \"Male\",\r\n    \"age\": 28,\r\n    \"symptoms\": [\r\n        \"Headache\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/vocid22/hospital/5/patients",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"hospital",
+						"5",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPatientsBySymptoms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    \"Headache\",\r\n    \"Cough\"\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/vocid22/patients-with-symptoms",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vocid22",
+						"patients-with-symptoms"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
